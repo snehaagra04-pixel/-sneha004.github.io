@@ -41,6 +41,7 @@ header p {
   font-size: 1.1rem;
 }
 
+/* BUTTON */
 .btn {
   display: inline-block;
   margin-top: 20px;
@@ -50,6 +51,23 @@ header p {
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0ea5e9;
+  transform: scale(1.05);
+}
+
+/* LINKS FIX */
+a {
+  color: #38bdf8;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #0ea5e9;
 }
 
 .section {
@@ -103,20 +121,24 @@ footer {
 
 <header>
   <h1>Sneha Agrawal</h1>
-  <p>Full Stack Developer | Gen AI Integration | B.Tech CSE</p>
-  <a href="resume.pdf" class="btn">Download Resume</a>
+  <p>Web Developer | Learning Generative AI | B.Tech CSE</p>
+
+  <!-- FIXED RESUME BUTTON -->
+  <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
 </header>
 
+<!-- ABOUT -->
 <div class="section">
   <h2>About Me</h2>
   <div class="card">
     <p>
-      I am a Computer Science student focused on building real-world web applications and integrating AI into practical solutions. 
-      I actively develop projects that solve real problems and continuously improve my technical and problem-solving skills.
+      I am a Computer Science student focused on building real-world web applications.
+      I am currently learning Generative AI and working on improving my projects with intelligent features.
     </p>
   </div>
 </div>
 
+<!-- SKILLS -->
 <div class="section">
   <h2>Skills</h2>
   <div class="card skills">
@@ -125,57 +147,70 @@ footer {
     <span>JavaScript</span>
     <span>Python</span>
     <span>Flask</span>
-    <span>Gen AI APIs</span>
     <span>Git & GitHub</span>
   </div>
 </div>
 
+<!-- PROJECTS -->
 <div class="section">
   <h2>Projects</h2>
 
   <div class="card">
     <h3>AI Chatbot Web Application</h3>
     <p>
-      Developed a real-time chatbot using Generative AI APIs that generates intelligent responses based on user input.
+      Built a chatbot capable of responding to user queries using basic logic.
     </p>
-    <p><b>Tech:</b> Python (Flask), HTML, CSS, JavaScript</p>
+    <p><b>Tech:</b> Python, JavaScript</p>
     <div class="project-buttons">
-      <a href="#" class="btn">GitHub</a>
+      <a href="https://github.com/snehaagra04-pixel" target="_blank" class="btn">GitHub</a>
     </div>
   </div>
 
-    <div class="card">
+  <div class="card">
     <h3>Personal Expense Tracker</h3>
     <p>
-      Created a personal expense tracking application to record daily expenses. 
-      Implemented basic logic for adding and viewing expenses
+      Developed a web app to track daily expenses with basic insights and clean UI.
     </p>
     <p><b>Tech:</b> HTML, CSS, JavaScript</p>
     <div class="project-buttons">
-      <a href="#" class="btn">GitHub</a>
+      <a href="https://github.com/snehaagra04-pixel" target="_blank" class="btn">GitHub</a>
     </div>
   </div>
 
   <div class="card">
     <h3>House Renting Web Application</h3>
     <p>
-      Built a web platform for property listing and booking with user-friendly interface and search functionality.
+      Created a property listing platform with search functionality.
     </p>
     <p><b>Tech:</b> HTML, CSS, JavaScript</p>
     <div class="project-buttons">
-      <a href="#" class="btn">GitHub</a>
+      <a href="https://github.com/snehaagra04-pixel" target="_blank" class="btn">GitHub</a>
     </div>
   </div>
 
 </div>
 
+<!-- CONTACT -->
 <div class="section">
   <h2>Contact</h2>
   <div class="card">
-    <p>Email: snehagra04@gmail.com</p>
-    <p>LinkedIn: https://www.linkedin.com/in/snehaagrawal-81778b29</p>
-    <p>GitHub:  https://github.com/snehaagra04-pixel
-</p>
+
+    <p>Email: 
+      <a href="mailto:snehagra04@gmail.com">snehagra04@gmail.com</a>
+    </p>
+
+    <p>LinkedIn: 
+      <a href="https://www.linkedin.com/in/YOUR-USERNAME" target="_blank">
+        linkedin.com/in/YOUR-USERNAME
+      </a>
+    </p>
+
+    <p>GitHub: 
+      <a href="https://github.com/snehaagra04-pixel" target="_blank">
+        github.com/snehaagra04-pixel
+      </a>
+    </p>
+
   </div>
 </div>
 

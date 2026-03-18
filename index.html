@@ -2,56 +2,97 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Sneha Agrawal | CSE Student</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sneha Agrawal | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f4f6f8;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e2e8f0;
 }
 
 .container {
-  max-width: 900px;
-  background: white;
-  margin: 40px auto;
-  padding: 40px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
 }
 
-h1 {
-  margin-bottom: 5px;
-}
-
-.subtitle {
-  color: gray;
-  margin-bottom: 30px;
-}
-
-section {
-  margin-bottom: 30px;
-}
-
-h2 {
-  border-bottom: 2px solid #0077cc;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-a {
-  color: #0077cc;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.footer {
+header {
   text-align: center;
-  color: gray;
+  margin-bottom: 60px;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header p {
+  color: #94a3b8;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-left: 4px solid #38bdf8;
+  padding-left: 10px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 15px;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.skills span {
+  display: inline-block;
+  background: #334155;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.project-buttons a {
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
   margin-top: 40px;
+  color: #94a3b8;
 }
 </style>
 </head>
@@ -60,60 +101,87 @@ a {
 
 <div class="container">
 
-<h1>Sneha Agrawal</h1>
-<p class="subtitle">CSE Student | 6th Semester</p>
+<header>
+  <h1>Sneha Agrawal</h1>
+  <p>Full Stack Developer | Gen AI Integration | B.Tech CSE</p>
+  <a href="resume.pdf" class="btn">Download Resume</a>
+</header>
 
-<section>
-<h2>About Me</h2>
-<p>
-I am a Computer Science student passionate about web development and programming.
-I am actively looking for entry-level opportunities and internships.
-</p>
-</section>
-
-<section>
-<h2>Skills</h2>
-<ul>
-<li>HTML, CSS, JavaScript</li>
-<li>basics of C,Python</li>
-<li>Git & GitHub</li>
-</ul>
-</section>
-
-<section>
-<h2>Projects</h2>
-
-<ul>
-<li>
-<b>House Renting Web Application</b><br>
-• A web-based platform for property listing and rental management<br>
-• Features: User login, property search, booking request<br>
-• Technologies: HTML, CSS, JavaScript
-</li>
-<br>
-
-<li>
-<b>Mental Wellness AI Chatbot</b><br>
-• AI-based chatbot to provide mental wellness support<br>
-• Uses NLP concepts to respond to user queries<br>
-• Technologies: Python, AI concepts
-</li>
-</ul>
-
-</section>
-<section>
-<h2>Resume</h2>
-<a href="resume.pdf" target="_blank">⬇ Download Resume</a>
-</section>
-
-<section>
-<h2>Contact</h2>
-<p>Email: snehagra04@gmail.com</p>
-</section>
-
-<div class="footer">
-© 2026 Sneha Agrawal
+<div class="section">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I am a Computer Science student focused on building real-world web applications and integrating AI into practical solutions. 
+      I actively develop projects that solve real problems and continuously improve my technical and problem-solving skills.
+    </p>
+  </div>
 </div>
+
+<div class="section">
+  <h2>Skills</h2>
+  <div class="card skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Python</span>
+    <span>Flask</span>
+    <span>Gen AI APIs</span>
+    <span>Git & GitHub</span>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>AI Chatbot Web Application</h3>
+    <p>
+      Developed a real-time chatbot using Generative AI APIs that generates intelligent responses based on user input.
+    </p>
+    <p><b>Tech:</b> Python (Flask), HTML, CSS, JavaScript</p>
+    <div class="project-buttons">
+      <a href="#" class="btn">GitHub</a>
+    </div>
+  </div>
+
+    <div class="card">
+    <h3>Personal Expense Tracker</h3>
+    <p>
+      Created a personal expense tracking application to record daily expenses. 
+      Implemented basic logic for adding and viewing expenses
+    </p>
+    <p><b>Tech:</b> HTML, CSS, JavaScript</p>
+    <div class="project-buttons">
+      <a href="#" class="btn">GitHub</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>House Renting Web Application</h3>
+    <p>
+      Built a web platform for property listing and booking with user-friendly interface and search functionality.
+    </p>
+    <p><b>Tech:</b> HTML, CSS, JavaScript</p>
+    <div class="project-buttons">
+      <a href="#" class="btn">GitHub</a>
+    </div>
+  </div>
+
+</div>
+
+<div class="section">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: snehagra04@gmail.com</p>
+    <p>LinkedIn: https://www.linkedin.com/in/snehaagrawal-81778b29</p>
+    <p>GitHub:  https://github.com/sneha004
+</p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Sneha Agrawal | Portfolio</p>
+</footer>
 
 </div>
 

@@ -112,6 +112,24 @@ footer {
   margin-top: 40px;
   color: #94a3b8;
 }
+  .resume-buttons {
+  margin-top: 20px;
+}
+
+.resume-buttons .btn {
+  margin-right: 10px;
+}
+
+.secondary {
+  background: transparent;
+  color: #38bdf8;
+  border: 2px solid #38bdf8;
+}
+
+.secondary:hover {
+  background: #38bdf8;
+  color: black;
+}
 </style>
 </head>
 
@@ -124,7 +142,10 @@ footer {
   <p>Web Developer | Learning Generative AI | B.Tech CSE</p>
 
   <!-- FIXED RESUME BUTTON -->
-  <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
+  <div class="resume-buttons">
+  <a href="resume.pdf" target="_blank" class="btn">View Resume</a>
+  <a href="resume.pdf" download class="btn secondary">Download Resume</a>
+  </div>
 </header>
 
 <!-- ABOUT -->

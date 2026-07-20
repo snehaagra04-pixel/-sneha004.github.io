@@ -5,241 +5,237 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sneha Agrawal | Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-body {
-  background: #0f172a;
-  color: #e2e8f0;
-}
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 40px 20px;
-}
-
-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-header h1 {
-  font-size: 3rem;
-}
-
-header p {
-  color: #94a3b8;
-  margin-top: 10px;
-  font-size: 1.1rem;
-}
-
-/* BUTTON */
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 20px;
-  background: #38bdf8;
-  color: black;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: #0ea5e9;
-  transform: scale(1.05);
-}
-
-/* LINKS FIX */
-a {
-  color: #38bdf8;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-a:hover {
-  color: #0ea5e9;
-}
-
-.section {
-  margin-bottom: 60px;
-}
-
-.section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  border-left: 4px solid #38bdf8;
-  padding-left: 10px;
-}
-
-.card {
-  background: #1e293b;
-  padding: 25px;
-  border-radius: 15px;
-  margin-top: 15px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-}
-
-.skills span {
-  display: inline-block;
-  background: #334155;
-  padding: 8px 15px;
-  margin: 5px;
-  border-radius: 20px;
-}
-
-.project-buttons a {
-  margin-right: 10px;
-  font-size: 0.9rem;
-}
-
-footer {
-  text-align: center;
-  margin-top: 40px;
-  color: #94a3b8;
-}
-  .resume-buttons {
-  margin-top: 20px;
-}
-
-.resume-buttons .btn {
-  margin-right: 10px;
-}
-
-.secondary {
-  background: transparent;
-  color: #38bdf8;
-  border: 2px solid #38bdf8;
-}
-
-.secondary:hover {
-  background: #38bdf8;
-  color: black;
-}
-</style>
 </head>
 
 <body>
 
-<div class="container">
+<nav>
+<div class="logo">Sneha Agrawal</div>
 
-<header>
-  <h1>Sneha Agrawal</h1>
-  <p>Web Developer | Learning Generative AI | B.Tech CSE</p>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 
-  <!-- FIXED RESUME BUTTON -->
-  <div class="resume-buttons">
-  <a href="resume.pdf" target="_blank" class="btn">View Resume</a>
-  <a href="resume.pdf" download class="btn secondary">Download Resume</a>
-  </div>
-</header>
+</nav>
 
-<!-- ABOUT -->
-<div class="section">
-  <h2>About Me</h2>
-  <div class="card">
-    <p>
-      I am a Computer Science student focused on building real-world web applications.
-      I am currently learning Generative AI and working on improving my projects with intelligent features.
-    </p>
-  </div>
-</div>
+<section id="home" class="hero">
 
-<!-- SKILLS -->
-<div class="section">
-  <h2>Skills</h2>
-  <div class="card skills">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    <span>Python</span>
-    <span>Flask</span>
-    <span>Git & GitHub</span>
-  </div>
-</div>
+<div class="hero-text">
 
-<!-- PROJECTS -->
-<div class="section">
-  <h2>Projects</h2>
+<h1>Hello, I'm <span>Sneha Agrawal</span></h1>
 
-  <div class="card">
-    <h3>AI Chatbot Web Application</h3>
-    <p>
-      Built a chatbot capable of responding to user queries using basic logic.
-    </p>
-    <p><b>Tech:</b> Python, JavaScript</p>
-    <div class="project-buttons">
-      <a href="https://github.com/snehaagra04-pixel" target="_blank" class="btn">GitHub</a>
-    </div>
-  </div>
+<h3>Full Stack Web Developer | AI & ML Enthusiast</h3>
 
-  <div class="card">
-    <h3>Personal Expense Tracker</h3>
-    <p>
-      Developed a web app to track daily expenses with basic insights and clean UI.
-    </p>
-    <p><b>Tech:</b> HTML, CSS, JavaScript</p>
-    <div class="project-buttons">
-      <a href="https://github.com/snehaagra04-pixel" target="_blank" class="btn">GitHub</a>
-    </div>
-  </div>
+<p>
+Computer Science Engineering student passionate about
+building real-world web applications and AI solutions.
+</p>
 
-  <div class="card">
-    <h3>House Renting Web Application</h3>
-    <p>
-      Created a property listing platform with search functionality.
-    </p>
-    <p><b>Tech:</b> HTML, CSS, JavaScript</p>
-    <div class="project-buttons">
-      <a href="https://github.com/snehaagra04-pixel" target="_blank" class="btn">GitHub</a>
-    </div>
-  </div>
+<div class="buttons">
+
+<a href="resume.pdf" class="btn">
+View Resume
+</a>
+
+<a href="resume.pdf" download class="btn2">
+Download Resume
+</a>
 
 </div>
 
-<!-- CONTACT -->
-<div class="section">
-  <h2>Contact</h2>
-  <div class="card">
-
-    <p>Email: 
-      <a href="mailto:snehagra04@gmail.com">snehagra04@gmail.com</a>
-    </p>
-
-    <p>LinkedIn: 
-      <a href=" https://www.linkedin.com/in/snehaagrawal-81778b294" target="_blank">
-        linkedin.com/in/snehaagrawal-81778b294
-      </a>
-    </p>
-
-    <p>GitHub: 
-      <a href="https://github.com/snehaagra04-pixel" target="_blank">
-        github.com/snehaagra04-pixel
-      </a>
-    </p>
-
-  </div>
 </div>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="card">
+
+<p>
+
+I am a Computer Science Engineering student currently
+learning Artificial Intelligence, Machine Learning and
+Full Stack Web Development.
+
+I enjoy solving real-world problems through technology
+and continuously improving my development skills.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2>Technical Skills</h2>
+
+<div class="skills">
+
+<span>HTML5</span>
+
+<span>CSS3</span>
+
+<span>JavaScript</span>
+
+<span>React.js</span>
+
+<span>Node.js</span>
+
+<span>Express.js</span>
+
+<span>MongoDB</span>
+
+<span>Python</span>
+
+<span>Flask</span>
+
+<span>Git</span>
+
+<span>GitHub</span>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<h2>Experience</h2>
+
+<div class="card">
+
+<h3>AI Intern | AICW</h3>
+
+<p>July 2026 - Present</p>
+
+<p>
+
+Learning Artificial Intelligence and Machine Learning concepts while developing AI-based projects under mentor guidance.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Marketing & Community Engagement Intern | Younity Community</h3>
+
+<p>Completed</p>
+
+<p>
+
+Promoted online learning programs and improved communication, teamwork and user engagement skills.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="project">
+
+<h3>Satyakart - MERN Stack E-Commerce Website</h3>
+
+<p>
+
+React, Node.js, Express.js and MongoDB based e-commerce platform with authentication, shopping cart and order management.
+
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>AI Chatbot</h3>
+
+<p>
+
+AI chatbot built using Python and Flask with intelligent response generation.
+
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>PV Tech Solutions</h3>
+
+<p>
+
+Responsive business website developed using HTML, CSS and JavaScript.
+
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>Hotel Prema Inn</h3>
+
+<p>
+
+Modern hotel website with responsive UI and premium design.
+
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>Smart Expense Tracker</h3>
+
+<p>
+
+Expense management web application with AI insights and interactive charts.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="card">
+
+<p><i class="fa-solid fa-envelope"></i> snehagra04@gmail.com</p>
+
+<p><i class="fa-brands fa-github"></i> github.com/snehaagra04-pixel</p>
+
+<p><i class="fa-brands fa-linkedin"></i> linkedin.com/in/snehaagrawal-81778b294</p>
+
+</div>
+
+</section>
 
 <footer>
-  <p>© 2026 Sneha Agrawal | Portfolio</p>
+
+<p>© 2026 Sneha Agrawal | All Rights Reserved</p>
+
 </footer>
 
-</div>
+<script src="script.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sneha Agrawal | Full Stack Developer & AI Enthusiast</title>
+<meta name="description" content="Portfolio of Sneha Agrawal, Computer Science Engineering student building full-stack web apps and AI-powered products with Python, Flask, JavaScript and MongoDB.">
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+ 
+<div class="progress" id="progress"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+ 
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#home" class="brand"><span>SA</span>.</a>
+ 
+  <nav class="links" id="links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+ 
+  <div class="nav-actions">
+    <button class="icon-btn" id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+    <a href="Resume(2).pdf" class="btn btn-sm btn-primary nav-cta" target="_blank" rel="noopener">Resume</a>
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</header>
+ 
+<main>
+ 
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <span class="badge"><i class="dot"></i> Open to internships &amp; SDE roles</span>
+    <h1>Hi, I'm <span class="grad">Sneha Agrawal</span></h1>
+    <h2 class="roles"><span id="typed"></span><span class="caret"></span></h2>
+    <p class="lead">
+      Final-year Computer Science Engineering student who builds full-stack web apps
+      and AI-powered products, from idea to a clean, responsive interface.
+    </p>
+ 
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="Resume(2).pdf" download class="btn btn-ghost"><i class="fa-solid fa-download"></i> Download Resume</a>
+    </div>
+ 
+    <div class="socials">
+      <a href="https://github.com/snehaagra04-pixel" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/snehaagrawal-81778b294" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="mailto:snehagra04@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+ 
+  <div class="hero-visual">
+    <div class="code-card tilt">
+      <div class="code-top">
+        <i></i><i></i><i></i>
+        <span>sneha.js</span>
+      </div>
+<pre><code><span class="c-k">const</span> <span class="c-v">sneha</span> = {
+  <span class="c-p">role</span>: <span class="c-s">"Full Stack Developer"</span>,
+  <span class="c-p">stack</span>: [<span class="c-s">"Python"</span>, <span class="c-s">"Flask"</span>,
+          <span class="c-s">"JavaScript"</span>, <span class="c-s">"MongoDB"</span>],
+  <span class="c-p">learning</span>: <span class="c-s">"AI &amp; Machine Learning"</span>,
+  <span class="c-p">cgpa</span>: <span class="c-n">9.26</span>,
+  <span class="c-p">hackathon</span>: <span class="c-s">"Decode X Finalist"</span>,
+  <span class="c-p">openToWork</span>: <span class="c-n">true</span>
+};</code></pre>
+    </div>
+    <div class="float-chip chip-1"><i class="fa-solid fa-robot"></i> Generative AI</div>
+    <div class="float-chip chip-2"><i class="fa-brands fa-python"></i> Flask</div>
+    <div class="float-chip chip-3"><i class="fa-brands fa-js"></i> JavaScript</div>
+  </div>
+ 
+  <a href="#about" class="scroll-hint" aria-label="Scroll down"><i class="fa-solid fa-chevron-down"></i></a>
+</section>
+ 
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Python</span><span>Flask</span><span>Git</span><span>GitHub</span><span>REST APIs</span>
+    <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Python</span><span>Flask</span><span>Git</span><span>GitHub</span><span>REST APIs</span>
+  </div>
+</div>
+ 
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="section-head reveal">
+    <span class="eyebrow">01 / About</span>
+    <h2>Building things that <span class="grad">work and feel good</span></h2>
+  </div>
+ 
+  <div class="about-grid">
+    <div class="glass spot reveal about-text">
+      <p>
+        I'm a final-year Computer Science Engineering student at
+        <strong>R.N.G. Patel Institute of Technology, Surat</strong> (GTU).
+        I enjoy turning real-world problems into clean, working products, from responsive websites
+        to AI-powered applications.
+      </p>
+      <p>
+        Right now I'm deepening my skills in Artificial Intelligence and Machine Learning through
+        hands-on work, while building a full-stack e-commerce platform on the side. I like
+        projects where I can learn fast, ship, and improve.
+      </p>
+      <div class="edu">
+        <div><i class="fa-solid fa-graduation-cap"></i>
+          <div><b>B.E. Computer Science Engineering</b><small>2023 - 2027 &middot; CGPA 9.26</small></div>
+        </div>
+        <div><i class="fa-solid fa-book-open"></i>
+          <div><b>Class XII (RBSE)</b><small>96.80%</small></div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="stats">
+      <div class="glass spot stat reveal"><b data-count="9.26" data-dec="2">0</b><span>CGPA</span></div>
+      <div class="glass spot stat reveal"><b data-count="96.8" data-dec="1" data-suffix="%">0</b><span>Class XII</span></div>
+      <div class="glass spot stat reveal"><b data-count="5">0</b><span>Projects built</span></div>
+      <div class="glass spot stat reveal"><b data-count="4">0</b><span>Internships</span></div>
+    </div>
+  </div>
+</section>
+ 
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="section-head reveal">
+    <span class="eyebrow">02 / Skills</span>
+    <h2>My <span class="grad">toolkit</span></h2>
+  </div>
+ 
+  <div class="skill-grid">
+    <div class="glass spot skill-card reveal">
+      <div class="skill-icon"><i class="fa-solid fa-laptop-code"></i></div>
+      <h3>Frontend</h3>
+      <div class="chips"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React.js</span><span>Responsive Design</span></div>
+    </div>
+    <div class="glass spot skill-card reveal">
+      <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+      <h3>Backend &amp; Database</h3>
+      <div class="chips"><span>Python</span><span>Flask</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>REST APIs</span></div>
+    </div>
+    <div class="glass spot skill-card reveal">
+      <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+      <h3>AI &amp; ML</h3>
+      <div class="chips"><span>Generative AI APIs</span><span>Python for AI</span><span>Machine Learning (learning)</span></div>
+    </div>
+    <div class="glass spot skill-card reveal">
+      <div class="skill-icon"><i class="fa-solid fa-code-branch"></i></div>
+      <h3>Tools &amp; Concepts</h3>
+      <div class="chips"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Google Colab</span><span>Problem Solving</span></div>
+    </div>
+  </div>
+</section>
+ 
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="section-head reveal">
+    <span class="eyebrow">03 / Experience</span>
+    <h2>Where I've <span class="grad">worked &amp; learned</span></h2>
+  </div>
+ 
+  <div class="timeline">
+ 
+    <div class="t-item reveal">
+      <span class="t-dot live"></span>
+      <div class="glass spot t-card">
+        <div class="t-top"><h3>AI Intern</h3><span class="t-date">June 2026 - Present</span></div>
+        <h4>AICW</h4>
+        <ul>
+          <li>Hands-on training in Artificial Intelligence and Machine Learning concepts.</li>
+          <li>Learning Python-based AI development and industry-relevant tools.</li>
+          <li>Developing an AI-based project under mentor guidance.</li>
+        </ul>
+      </div>
+    </div>
+ 
+    <div class="t-item reveal">
+      <span class="t-dot"></span>
+      <div class="glass spot t-card">
+        <div class="t-top"><h3>Web Developer</h3><span class="t-date">Completed</span></div>
+        <h4>KISTechnosoftware</h4>
+        <ul>
+          <li>Developed responsive, user-friendly websites using HTML5, CSS3 and JavaScript.</li>
+          <li>Designed interactive pages with a focus on UI/UX and cross-device compatibility.</li>
+          <li>Worked on debugging, testing and performance optimization.</li>
+          <li>Collaborated with team members to customize and maintain web applications.</li>
+        </ul>
+      </div>
+    </div>
+ 
+    <div class="t-item reveal">
+      <span class="t-dot"></span>
+      <div class="glass spot t-card">
+        <div class="t-top"><h3>Web Developer</h3><span class="t-date">Completed</span></div>
+        <h4>Next Big Technology</h4>
+        <ul>
+          <li>Developed an AI-related website with a responsive, user-friendly interface.</li>
+          <li>Worked on integrating AI-based features to improve functionality and user experience.</li>
+        </ul>
+      </div>
+    </div>
+ 
+    <div class="t-item reveal">
+      <span class="t-dot"></span>
+      <div class="glass spot t-card">
+        <div class="t-top"><h3>Marketing &amp; Community Engagement Intern</h3><span class="t-date">13 - 27 Mar 2026</span></div>
+        <h4>Younity Community</h4>
+        <ul>
+          <li>Promoted online learning programs and handled user queries through digital outreach.</li>
+          <li>Strengthened communication, teamwork and customer engagement skills.</li>
+        </ul>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+ 
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="section-head reveal">
+    <span class="eyebrow">04 / Projects</span>
+    <h2>Things I've <span class="grad">built</span></h2>
+  </div>
+ 
+  <div class="project-grid">
+ 
+    <article class="glass spot project featured reveal tilt">
+      <div class="p-top">
+        <span class="p-icon"><i class="fa-solid fa-cart-shopping"></i></span>
+        <span class="status"><i class="dot"></i> In Progress</span>
+      </div>
+      <h3>Satyakart</h3>
+      <p class="p-sub">MERN Stack E-Commerce Platform</p>
+      <p>
+        A responsive e-commerce web app with product search, category-based filtering,
+        shopping cart, authentication and order management, built with reusable UI components.
+      </p>
+      <div class="tags"><span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span></div>
+      <div class="p-links"><a href="https://github.com/snehaagra04-pixel" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a></div>
+    </article>
+ 
+    <article class="glass spot project reveal tilt">
+      <div class="p-top"><span class="p-icon"><i class="fa-solid fa-robot"></i></span></div>
+      <h3>AI Chatbot</h3>
+      <p class="p-sub">Generative AI Web App</p>
+      <p>
+        A chatbot that understands user queries and generates intelligent responses through
+        Generative AI APIs, with a Flask backend connected to a clean frontend.
+      </p>
+      <div class="tags"><span>Python</span><span>Flask</span><span>JavaScript</span><span>Gen AI APIs</span></div>
+      <div class="p-links"><a href="https://github.com/snehaagra04-pixel" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a></div>
+    </article>
+ 
+    <article class="glass spot project reveal tilt">
+      <div class="p-top"><span class="p-icon"><i class="fa-solid fa-chart-pie"></i></span></div>
+      <h3>Smart Expense Tracker</h3>
+      <p class="p-sub">Finance Web App</p>
+      <p>
+        An expense management application with AI-powered insights and interactive charts
+        to help users understand their spending.
+      </p>
+      <div class="tags"><span>Python</span><span>Flask</span><span>JavaScript</span><span>Charts</span></div>
+      <div class="p-links"><a href="https://github.com/snehaagra04-pixel" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a></div>
+    </article>
+ 
+    <article class="glass spot project reveal tilt">
+      <div class="p-top"><span class="p-icon"><i class="fa-solid fa-building"></i></span></div>
+      <h3>PV Tech Solutions</h3>
+      <p class="p-sub">Business Website</p>
+      <p>
+        A responsive multi-page business website with services, company information and contact
+        pages, built for smooth navigation and cross-device performance.
+      </p>
+      <div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+      <div class="p-links"><a href="https://github.com/snehaagra04-pixel" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a></div>
+    </article>
+ 
+    <article class="glass spot project reveal tilt">
+      <div class="p-top"><span class="p-icon"><i class="fa-solid fa-hotel"></i></span></div>
+      <h3>Hotel Prema Inn</h3>
+      <p class="p-sub">Hotel Website</p>
+      <p>
+        A modern, premium hotel website with rooms, facilities, gallery, location and contact
+        pages, optimized for responsiveness and cross-browser support.
+      </p>
+      <div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+      <div class="p-links"><a href="https://github.com/snehaagra04-pixel" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a></div>
+    </article>
+ 
+  </div>
+</section>
+ 
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="section">
+  <div class="section-head reveal">
+    <span class="eyebrow">05 / Achievements</span>
+    <h2>Recognition &amp; <span class="grad">certifications</span></h2>
+  </div>
+ 
+  <div class="ach-grid">
+    <div class="glass spot ach reveal"><i class="fa-solid fa-trophy"></i><div><b>Decode X Hackathon</b><small>Round 3 Finalist</small></div></div>
+    <div class="glass spot ach reveal"><i class="fa-solid fa-file-lines"></i><div><b>Technical Paper Presentation</b><small>Presented at college level</small></div></div>
+    <div class="glass spot ach reveal"><i class="fa-solid fa-certificate"></i><div><b>AMCAT Certified</b><small>Employability assessment</small></div></div>
+    <div class="glass spot ach reveal"><i class="fa-solid fa-store"></i><div><b>E-Commerce &amp; Data Literacy</b><small>EMPI Business School</small></div></div>
+    <div class="glass spot ach reveal"><i class="fa-solid fa-award"></i><div><b>QCFI Certifications (3)</b><small>Three certifications</small></div></div>
+    <div class="glass spot ach reveal"><i class="fa-solid fa-star"></i><div><b>Star Performer of the Day</b><small>Younity Community</small></div></div>
+  </div>
+</section>
+ 
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="contact glass spot reveal">
+    <span class="eyebrow">06 / Contact</span>
+    <h2>Let's build something <span class="grad">together</span></h2>
+    <p>
+      I'm looking for an SDE / Web Development internship or entry-level role.
+      If you have an opportunity or an idea, I'd love to hear from you.
+    </p>
+ 
+    <div class="contact-actions">
+      <a href="mailto:snehagra04@gmail.com" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> snehagra04@gmail.com</a>
+      <a href="https://www.linkedin.com/in/snehaagrawal-81778b294" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+      <a href="https://github.com/snehaagra04-pixel" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+    </div>
+  </div>
+</section>
+ 
+</main>
+ 
+<footer class="footer">
+  <p>&copy; <span id="year">2026</span> Sneha Agrawal &middot; Designed &amp; built by me</p>
+  <a href="#home" class="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+</footer>
+ 
+<script src="script.js"></script>
+</body>
+</html>
+ 
